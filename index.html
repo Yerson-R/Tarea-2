@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+
+        <title>Mi calculadora</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    </head>
+    <body class="img">
+        <h1 class="Titulo">Mi calculadora</h1>
+        
+        <nav>
+        <h3>Suma</h3>
+        <input id="sumando1" type="number">
+        <input id="sumando2" type="number">
+        <button onClick="sumar()">Sumar</button>
+        <h4> Total:</h4>
+        <p id="resultadoSuma"></p>
+
+        <br>
+        <h3>Resta</h3>
+        <input id="minuendo" type="number">
+        <input id="sustraendo" type="number">
+        <button onClick="restar()">Restar</button>
+        <h4> Diferencia:</h4>
+        <p id="resultadoResta"></p>
+        </nav>
+        
+        <div>
+        <h3>Multiplicación</h3>
+        <input id="factor1" type="number">
+        <input id="factor2" type="number">
+        <button onClick="multiplicar()">Multiplicar</button>
+        <h4> Producto:</h4>
+        <p id="resultadoMultiplicacion"></p>
+
+        <br>
+        <h3>División</h3>
+        <input id="Dividendo" type="number">
+        <input id="Divisor" type="number">
+        <button onClick="dividir()">Dividir</button>
+        <h4> Resultado:</h4>
+        <p id="resultadoDivision"></p>
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="#">autor: yerson rodríguez</a></li>
+                <li><a href="#">profesor: gustavo</a></li>
+            </ul>
+        </footer>
+        
+        <script>
+
+            function sumar() {
+                var sumando1 = document.getElementById("sumando1").value;
+                var sumando2 = document.getElementById("sumando2").value;
+                var suma = parseInt(sumando1) + parseInt(sumando2);
+                document.getElementById("resultadoSuma").innerHTML = suma;
+            }
+
+            function restar(){
+                var minuendo = document.getElementById("minuendo").value;
+                var sustraendo = document.getElementById("sustraendo").value;
+                var resta = parseInt(minuendo) - parseInt(sustraendo);
+                document.getElementById("resultadoResta").innerHTML = resta
+            }
+
+            function multiplicar(){
+                var factor1 = document.getElementById("factor1").value;
+                var factor2 = document.getElementById("factor2").value;
+                var Multiplica = parseInt(factor1) * parseInt(factor2);
+                document.getElementById("resultadoMultiplicacion").innerHTML = Multiplica
+            }
+
+            function dividir (){
+                var Dividendo = document.getElementById("Dividendo").value;
+                var Divisor = document.getElementById("Divisor").value;
+                var Dividir1 = parseInt(Dividendo)/(Divisor);
+                document.getElementById("resultadoDivision").innerHTML = Dividir1
+            }
+        </script>
+    </body>
+</html>

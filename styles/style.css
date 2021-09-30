@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: large;
+    font-style: italic;
+    scroll-behavior:none;
+}
+.Titulo {
+color:white;
+background-color: transparent;
+box-decoration-break:initial;
+width: all;
+height: 100px;
+margin: 0px;
+padding: 0%;
+text-align: center;
+font-size: 10mm;
+text-transform: capitalize;
+}
+
+nav {
+  display:inline-block;  
+  padding: 50px;
+  margin: 50px;
+  color:white;
+}
+nav button{
+    text-decoration:none;
+    color:black;
+    border-radius: 4px;
+    transition:all 0.5s linear;
+}
+nav button:hover{
+    color: white;
+    background-color: red;
+}
+
+#resultadoSuma{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    overflow: auto;
+}
+
+#resultadoResta{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    overflow: auto;
+}
+
+div {
+    display:inline-block;  
+    height: 250px;
+    color:white;
+}
+div button{
+    text-decoration:none;
+    color:black;
+    border-radius: 4px;
+    transition:all 0.5s linear; 
+}
+div button:hover{
+    color: white;
+    background-color: red;
+}
+
+#resultadoMultiplicacion{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    overflow: auto;
+}
+
+#resultadoDivision{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    overflow: auto;
+}
+.img{
+    background: url(../src/lol.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+footer ul li a{
+    color:white;
+    text-transform: capitalize;
+    font-size: 17px;
+}
